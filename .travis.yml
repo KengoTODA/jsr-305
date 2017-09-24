@@ -13,6 +13,6 @@ addons:
       - oracle-java9-installer
 
 install:
-  - ./mvnw install -B -V -Dgpg.skip -DskipTests -Dmaven.javadoc.skip -pl ri -am
+  - ./mvnw install -B -V --global-toolchains .travis/toolchains.xml  -Dgpg.skip -DskipTests -Dmaven.javadoc.skip -pl ri -am
 script:
   - ./mvnw test -B -V --global-toolchains .travis/toolchains.xml -pl ri -am
