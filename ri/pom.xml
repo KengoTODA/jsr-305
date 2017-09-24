@@ -124,6 +124,13 @@
             <Export-Package>javax.annotation;javax.annotation.concurrent;javax.annotation.meta</Export-Package>
           </instructions>
         </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>biz.aQute.bnd</groupId>
+            <artifactId>biz.aQute.bndlib</artifactId>
+            <version>3.4.0</version>
+          </dependency>
+        </dependencies>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
