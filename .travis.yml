@@ -11,6 +11,7 @@ addons:
     packages:
       # To build module-info.java, we need JDK9
       - oracle-java9-installer
+      - oracle-java9-set-default
 
 install:
   - ./mvnw install -B -V --global-toolchains .travis/toolchains.xml  -Dgpg.skip -DskipTests -Dmaven.javadoc.skip -pl ri -am
